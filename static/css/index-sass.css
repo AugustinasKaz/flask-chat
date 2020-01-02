@@ -1,0 +1,136 @@
+.picture {
+  border: 2px solid white;
+  background-color: #bbb;
+  border-radius: 50%;
+  height: 7%;
+  width: 3.5%;
+}
+
+#button_modal, #button_form {
+  background-image: -webkit-gradient(linear, left top, right top, from(#bf00ff), color-stop(#ff8080), to(#cc99ff));
+  background-image: linear-gradient(to right, #bf00ff, #ff8080, #cc99ff);
+  width: 120px;
+  height: 40px;
+  color: white;
+  opacity: 0.8;
+  border: 2px solid white;
+  border-radius: 12px;
+}
+
+#button_modal:hover, #button_form:hover {
+  opacity: 0.6;
+}
+
+.modal-content, .modal-title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  background-color: rgba(255, 204, 204, 0.5);
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#bf00ff), color-stop(#ff8080), to(#cc99ff));
+  background-image: linear-gradient(to right, #bf00ff, #ff8080, #cc99ff);
+  margin: 20px;
+}
+
+#main {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  display: row;
+  border-radius: 10px;
+  height: 100vh;
+  width: 60vw;
+  background-color: rgba(255, 204, 204, 0.5);
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#chat-header {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bf00ff), color-stop(#ff8080), to(#cc99ff));
+  background-image: linear-gradient(to right, #bf00ff, #ff8080, #cc99ff);
+  opacity: 0.8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 10%;
+  border: 2px solid white;
+  text-align: center;
+  padding: 10px;
+}
+
+#message-display {
+  overflow: auto;
+  border: 2px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bf00ff), color-stop(#ff8080), to(#cc99ff));
+  background-image: linear-gradient(to right, #bf00ff, #ff8080, #cc99ff);
+  opacity: 0.8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 70%;
+}
+
+#message-input {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+}
+
+#msg_text {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 80%;
+  height: 40px;
+}
+
+#header-pic {
+  position: absolute;
+  left: 30%;
+}
+
+#header-name {
+  position: absolute;
+  top: 7%;
+  left: 35%;
+}
+
+#header-status {
+  position: absolute;
+  top: 10%;
+  left: 37%;
+}
+
+#status-pic {
+  border-radius: 50%;
+  background-color: green;
+  height: 7px;
+  width: 7px;
+  position: absolute;
+  top: 10.6%;
+  left: 36%;
+}
+
+.msg-1 {
+  text-align: center;
+  width: 90%;
+  height: 50px;
+  border: 1px solid red;
+}
+/*# sourceMappingURL=index-sass.css.map */

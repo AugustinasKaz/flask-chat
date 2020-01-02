@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html style="height:100%">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+  <script src="/static/js/index.js"></script>
+  <link href="/static/css/index-sass.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="chat-header">
+      <img class="picture" id="header-pic" src="/static/picture1.png"/>
+      <h4 id="header-name"></h4>
+      <h6 id="header-status">Active</h6>
+      <div id="status-pic"></div>
+    </div>
+    <div id="message-display">
+    </div>
+    <div id="message-input">
+      <input id="msg_text">
+      <input type="Submit" value="Send" id="button_form"/>
+    </div>
+  </div>
+
+  <!---Username modal-->
+  <div class="container">
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Enter your username</h4>
+          </div>
+          <div class="modal-body">
+            <input type="text" id="user_input">
+          </div>
+          <div class="modal-footer">
+            <button id="button_modal" type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!---Pictures modal-->
+    <div class="container">
+      <div class="modal fade" id="PicsModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Choose your profile picture</h4>
+            </div>
+            <div class="modal-body">
+              <img id="pic1" src="/static/picture1.png" class="rounded-circle user_picture" alt="bridge"
+                data-dismiss="modal">
+              <img id="pic2" src="/static/picture2.png" class="rounded-circle user_picture" alt="donald"
+                data-dismiss="modal">
+              <img id="pic3" src="/static/picture3.png" class="rounded-circle user_picture" alt="view"
+                data-dismiss="modal">
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+
+</html>
