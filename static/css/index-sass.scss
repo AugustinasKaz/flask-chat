@@ -18,6 +18,13 @@ $backgroud1: rgba(255, 204, 204, 0.50);
     margin-right: auto;
     border-radius: 10px;
 }
+@mixin chat-picture{
+    position: relative;
+    width:50px;
+    height:50px;
+    border:2px solid white;
+    border-radius:50%;
+}
 @mixin Msg-div{
     color: white;
     background-image: $body_color;
@@ -25,12 +32,23 @@ $backgroud1: rgba(255, 204, 204, 0.50);
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.picture{
+@mixin Messages{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width:40%;
+    height:50px;
     border:2px solid white;
-    background-color: #bbb;
-    border-radius: 50%;
-    height: 7%;
-    width: 3.5%;
+    border-radius: 10px;
+}
+.picture-1{
+    @include chat-picture();
+    top:-175%;
+    left: -15%;
+}
+.picture-2{
+    @include chat-picture();
+    top:-175%;
+    left: 100%;
 }
 
 #button_modal, #button_form{
@@ -66,6 +84,7 @@ body{
     padding:10px;
 }
 #message-display{
+    padding:20px;
     overflow: auto;
     border:2px solid white;
     @include Margin-border();
@@ -88,6 +107,11 @@ body{
     height:40px;
 }
 #header-pic{
+    border:2px solid white;
+    background-color: #bbb;
+    border-radius: 50%;
+    height: 7%;
+    width: 3.5%;
     position: absolute;
 	left: 30%;
 } 
@@ -111,8 +135,29 @@ body{
 	left: 36%;
 }
 .msg-1{
-    text-align: center;
-    width:90%;
-    height:50px;
-    border:1px solid red;
+    @include Messages();
+    margin-right:40%;
+    margin-left:10%;
+}
+.msg-2{
+    @include Messages();
+    margin-left:50%;
+    margin-right:10%;
+}
+.username_time-1{
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    top: -55%;
+    left: 5%;
+}
+.text-1{
+    position: relative;
+    top:-60%;
+    left: 5%;
+}
+
+label{
+    margin-right:5px !important;
 }

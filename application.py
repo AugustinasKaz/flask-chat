@@ -13,6 +13,9 @@ channel = []
 def index():
     return render_template("home.html")
 
+@socketio.on('first_load')
+def first_load():
+    emit('pranesti', {'channels': channel}, broadcast=True)
 
 @socketio.on('to all')
 def sending(data):
@@ -36,4 +39,4 @@ def new_picture(data):
      emit("add picture", {"channels": channel}, broadcast=True)
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)    
+    socketio.run(app, debug=False)    
