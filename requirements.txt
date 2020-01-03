@@ -1,5 +1,4 @@
 gunicorn 
-Python 
 Flask 
 Werkzeug 
 Flask-SocketIO 
