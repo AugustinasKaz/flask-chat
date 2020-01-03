@@ -19,7 +19,9 @@ $(document).ready(function () {
         const time = (new Date).getHours() + ":" + (new Date).getMinutes();
         const picture = "/static/picture1.png";
         $("#Display_picture").attr("src", picture);
+        if ( $("#header-name").is(':empty') ){ 
         $("#header-name").append(username);
+        }
         localStorage.setItem("username", $('#user_input').val());
         socket.emit('new username', { 'username': username, 'time': time, 'message': 'has joined the room', 'picture': picture });
       });
